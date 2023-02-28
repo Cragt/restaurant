@@ -1,17 +1,18 @@
-window.onload = init;
-export function init() {
-  const heading = document.createElement("div");
-  heading.className = "heading";
-  const div = document.getElementById("content");
-  heading.innerHTML = "<h1>Alex's Burgers & Fries</h1>";
-  div.appendChild(heading);
+export function initFrontPage() {
+  const page = document.getElementById("content");
 
-  const img = document.createElement("img");
-  img.src = "../src/food.png";
-  div.appendChild(img);
-
-  const info = document.createElement("p");
-  info.innerHTML =
-    "A great restaurant to eat at if you like burgers and fries!";
-  div.appendChild(info);
+  const homePage = document.createElement("div");
+  homePage.id = "home-page";
+  homePage.innerHTML = `
+  <div id="heading">
+  <h1>Alex's Burgers & Fries</h1>
+  </div>
+  <div id="picture">
+  <img src = "../src/food.png" alt="Cheeseburger with lettuce and tomato on sesame seed bun" width="300px">
+  </div>
+  <div id="info">
+  <p>A great place to come for burgers and fries!<p>
+  </div>
+  `;
+  page.appendChild(homePage);
 }
