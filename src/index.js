@@ -1,13 +1,14 @@
 import { initFrontPage } from "./frontPage";
 import { initMenu } from "./menu";
 import { initContact } from "./contact";
+import "./style.css";
 
 const page = document.getElementById("content");
 const buttons = document.createElement("div");
 
 const renderPage = function () {
   buttons.innerHTML = `
-<div id="heading">
+<div id="buttons">
 <button id="home">Home</button>
 <button id="menu">Menu</button>
 <button id="contact">Contact Us</button>

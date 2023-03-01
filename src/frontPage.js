@@ -8,7 +8,7 @@ export function initFrontPage() {
   <h1>Alex's Burgers & Fries</h1>
   </div>
   <div id="picture">
-  <img src = "../src/food.png" alt="Cheeseburger with lettuce and tomato on sesame seed bun" width="300px">
+  <img id="cheeseburger" src="../src/food.png" alt="Cheeseburger with lettuce and tomato on sesame seed bun">
   </div>
   <div id="info">
   <p>A great place to come for burgers and fries!<p>
